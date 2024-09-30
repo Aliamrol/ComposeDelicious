@@ -12,5 +12,5 @@ A Jetpack Compose-based Android app to display a list of foods with their detail
     Jetpack Compose: UI toolkit for building native Android interfaces.
     State Management: Managed efficiently using Jetpack Compose’s state system.
 🖼️ Screenshots
-(/images/1.png)
-(/images/2.png)
+!(/images/1.png)
+!(/images/2.png)
