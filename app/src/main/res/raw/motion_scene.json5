@@ -1,0 +1,91 @@
+{
+  ConstraintSets: {
+    end: {
+      my_image: {
+        width: 45,
+        height: 45,
+        top: ['parent', 'top', 8], // 8 is padding
+        start: ['back_icon', 'end', 8],
+      },
+      back_icon : {
+        width: 35,
+        height: 35,
+        top: ['parent', 'top', 12],
+        start: ['parent', 'start', 8]
+      },
+      title_txt : {
+        start: ['my_image', 'end', 8],
+        top: ['my_image', 'top'],
+        bottom: ['my_image', 'bottom'],
+        custom:{
+          text_color: "#000000"
+        }
+      },
+      share_icon: {
+        width: 0,
+        height: 0,
+        top: ['my_image', 'bottom', 8],
+        end: ['parent', 'end', 8]
+      },
+      content: {
+        width: 'spread',
+        start: ['parent', 'start', 0],
+        end: ['parent', 'end', 0],
+        top: ['back_icon', 'bottom', 0],
+
+      }
+    },
+    start: {
+      my_image: {
+        width: 200,
+        height: 200,
+        top: ['parent', 'top', 50],
+        end: ['parent', 'end'],
+        start: ['parent', 'start'],
+      },
+      back_icon : {
+        width: 35,
+        height: 35,
+        top: ['my_image', 'bottom', 8],
+        start: ['parent', 'start', 8]
+      },
+      title_txt: {
+        start: ['back_icon', 'end', 8],
+        top: ['back_icon', 'top', 0],
+        bottom: ['back_icon', 'bottom', 0],
+        custom:{
+          text_color: "#FF0000"
+        }
+      },
+      share_icon: {
+        width: 35,
+        height: 35,
+        top: ['my_image', 'bottom', 8],
+        end: ['parent', 'end', 8],
+      },
+      content: {
+        width: 'spread',
+        start: ['parent', 'start', 0],
+        end: ['parent', 'end', 0],
+        top: ['back_icon', 'bottom', 0],
+
+      }
+    }
+  },
+  Transitions: {
+    default:{
+      from: 'start',
+      to: 'end',
+      pathMotionArc: 'startHorizontal',
+      KeyFrames: {
+        KeyAttributes: [
+          {
+          target: ['title_txt'],
+          frames: [0,50, 100],
+          translationX: [0, 200, 0],
+          }
+        ],
+      }
+    }
+  },
+}
