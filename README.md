@@ -1,4 +1,4 @@
-# 🍽️ Food Listing App
+# 🍽️ ComposeDishes
 
 A Jetpack Compose-based Android app to display a list of foods with their details, nutritional information, and related recipes. This project is a part of my learning journey with Jetpack Compose, focusing on modern Android UI development.
 ## 🌟 Features
